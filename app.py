@@ -21,7 +21,7 @@ with open('result.pkl', 'rb') as f: # loading the data
 data = gpd.GeoDataFrame(data, geometry='geometry')
 
 # Getting rid of some ridiculous values that skewed the result
-data = data[data['land_value_ratio'] < 200] # getting rid of some ridiculous values that skewed the result
+data = data[data['land_value_ratio'] < 50] # getting rid of some ridiculous values that skewed the result
 
 # Define columns that represent different metrics
 metrics = ['r_reuse', 'c_reuse', 'i_reuse', 'land_value_ratio', 'walkability', 'drivability', 'shape_factor']
