@@ -1,0 +1,5 @@
+streamlit
+geopandas
+pickle
+folium
+streamlit_folium
