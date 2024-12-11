@@ -126,8 +126,8 @@ centroid = selected_geom.centroid
 # plot the parcel
 
 if basemap == "Satellite":
-    tiles = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
-    attr = 'Tiles © Esri'
+    tiles = "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"
+    attr = 'Tiles © Google'
 else:
     tiles = "OpenStreetMap"
     attr = ""
