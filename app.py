@@ -132,6 +132,10 @@ centroid = selected_geom.centroid
 if basemap == "Satellite":
     tiles = "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"
     attr = 'Tiles © Google'
+    with c1:
+        st.error("""
+        **WARNING** \n
+         STREAMLIT'S TILE SERVER INTEGRATION IS ERRORING AS OF 2024-12-11. THIS ISSUE WILL BE FIXED WHEN POSSIBLE.""")
 else:
     tiles = "OpenStreetMap"
     attr = ""
